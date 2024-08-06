@@ -1,0 +1,67 @@
+h2 {
+  color: #2C3E50;
+}
+
+i {
+  color: #2C3E50;
+}
+
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: -100px;
+  background-color: #2C3E50;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: 40px;
+  background-color: #2C3E50;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #1abc9ce6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.6s;
+  cursor: pointer;
+
+}
+
+.layer:hover {
+  opacity: 1;
+}
+
+.light_container {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(13, 109, 253, 0.28);
+  z-index: 9999;
+}
+
+.light_item {
+  width: 600px;
+  height: 63vh;
+  background-position: center;
+  background-size: cover;
+}
+
+img {
+  cursor: pointer;
+}

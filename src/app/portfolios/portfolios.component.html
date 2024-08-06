@@ -1,0 +1,30 @@
+<section class="pt-5 mt-4">
+  <div class="portifilo-info text-center pt-5 ">
+    <div class="position-relative">
+      <h2 class="text-uppercase fw-bolder fs-1">portfolio component</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="icon position-relative">
+          <i class="fa-solid fa-star "></i>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-4">
+        @for (photo of photos; track $index) {
+        <div class="col-md-6 col-lg-4">
+          <div class="mb-4 mx-2 position-relative overflow-hidden">
+            <img [src]="photo.img" class="w-100 rounded" alt="img1" (click)="showimage(photo.img)">
+            <div class="layer rounded" (click)="showimage(photo.img)">
+              <i class="fa-solid fa-plus fa-6x text-white"></i>
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+
+    <div class="light_container d-flex justify-content-center align-items-center bg-opacity-25 d-none" (click)="hide($event)" #lightcontainer>
+      <div class="light_item" #light_item></div>
+    </div>
+  </div>
+</section>

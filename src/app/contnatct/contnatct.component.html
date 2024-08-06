@@ -1,0 +1,33 @@
+<section class="pt-5 mt-4 container">
+  <div class="portifilo-info text-center pt-5 ">
+    <div class="position-relative">
+      <h2 class="text-uppercase fw-bolder fs-1">conatct section</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="icon position-relative">
+          <i class="fa-solid fa-star "></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact  mx-md-auto  p-3">
+    <label [class.hidden]="!inputValue1" for="name" class="position-relative top-0">userName : </label>
+    <input (input)="onInput($event)" type="text" id="name" name="name" placeholder="userName"
+      class="form-control my-2 py-3 border-0 border-bottom position-relative ">
+
+    <label [class.hidden]="!inputValue2" class="position-relative top-0" for="Age">userAge : </label>
+    <input (input)="onInput1($event)" type="text" id="Age" name="Age" placeholder="userAge"
+      class="form-control my-2 py-3 border-0 border-bottom position-relative">
+
+    <label [class.hidden]="!inputValue3" class="position-relative top-0" for="Email">userEmail : </label>
+    <input (input)="onInput2($event)" type="text" id="Email" name="Email" placeholder="userEmail"
+      class="form-control my-2 py-3 border-0 border-bottom position-relative">
+
+    <label [class.hidden]="!inputValue4" class="position-relative top-0" for="password">userPassword : </label>
+    <input (input)="onInput3($event)" type="text" id="password" name="password" placeholder="userPassword"
+      class="form-control my-2 py-3 border-0 border-bottom position-relative">
+
+    <button class="btn text-white mt-4">send Message</button>
+
+  </form>
+</section>

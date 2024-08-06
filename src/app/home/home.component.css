@@ -1,0 +1,32 @@
+section {
+  background-color: #1ABC9C;
+  /* margin-top: 86px;
+  min-height: calc(-106px + 100vh); */
+}
+.home-info{
+  height: 97vh;
+}
+
+img {
+  width: 250px;
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: -100px;
+  background-color: white;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: 40px;
+  background-color: white;
+}

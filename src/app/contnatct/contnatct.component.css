@@ -1,0 +1,61 @@
+h2 {
+  color: #2C3E50;
+}
+
+i {
+  color: #2C3E50;
+}
+
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: -100px;
+  background-color: #2C3E50;
+}
+
+.icon::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  top: 10px;
+  left: 40px;
+  background-color: #2C3E50;
+}
+
+form {
+  width: 60%;
+}
+
+label {
+  color: rgb(26, 188, 156);
+  margin-bottom: 2px;
+  transition: top .6s;
+}
+
+.hidden {
+  top: 40px !important;
+
+}
+
+input:focus {
+  box-shadow: none;
+}
+
+button,
+.btn:hover {
+  background-color: #1ABC9C;
+  border: 1px solid #1ABC9C;
+  color: white;
+
+}
+
+@media all and (max-width: 800px) {
+  form {
+    width: 100%;
+  }
+
+}

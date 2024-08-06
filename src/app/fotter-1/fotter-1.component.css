@@ -1,0 +1,9 @@
+section {
+  background-color: #2C3E50;
+}
+
+.icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px
+}
